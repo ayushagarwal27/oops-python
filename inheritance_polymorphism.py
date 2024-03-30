@@ -6,6 +6,9 @@ class User:
     def login(self):
         print('Logging in as', self._username)
 
+    def greet(self, greet='Hello there'):
+        print(greet)
+
 
 class Instructor(User):
     def __init__(self, username, subject):
@@ -18,3 +21,4 @@ class Instructor(User):
 
 mohit = Instructor('Mohit', 'Maths')
 mohit.login()
+mohit.greet()
